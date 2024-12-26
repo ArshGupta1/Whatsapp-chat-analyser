@@ -1,12 +1,12 @@
-import streamlit as st
-import preprocessor,helper
-import matplotlib.pyplot as plt
-import seaborn as sns
+    import streamlit as st
+    import preprocessor,helper
+    import matplotlib.pyplot as plt
+    import seaborn as sns
 
-st.sidebar.title("Whatsapp Chat Analyzer")
+    st.sidebar.title("Whatsapp Chat Analyzer")
 
-uploaded_file = st.sidebar.file_uploader("Choose a file")
-if uploaded_file is not None:
+    uploaded_file = st.sidebar.file_uploader("Choose a file")
+    if uploaded_file is not None:
     # To read file as bytes:
     bytes_data = uploaded_file.getvalue()
     data=bytes_data.decode("utf-8")
